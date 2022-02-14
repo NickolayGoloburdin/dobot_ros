@@ -15,17 +15,11 @@ l3= 135.013
 l4 = 147.085
 l5 = 31
 l6 = 13
-def ParseMsg(msg):
-    try:
-        coord_list = msg.point.split()
-        x = float(coord_list[0])
-        y = float(coord_list[1])
-        z = float(coord_list[2])
-        return x,y,z
-        except ValueError:
-        rospy.logerr('Input Error')
+
 def SetPoint(data):
-    X,Y,Z = ParseMsg(data)
+    X = data.x
+    Y = data.y
+    Z = data.z
     if X == 0:
         if Y > 0:
             alpha1 = m.pi/2
