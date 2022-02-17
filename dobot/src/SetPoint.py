@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import rospy
 import math as m
@@ -15,6 +15,7 @@ l6 = 13
 
 
 def SetPoint(data):
+    
     if data.x == 0:
         if data.y > 0:
             alpha1 = m.pi/2
