@@ -22,7 +22,7 @@
       <geometry>
         <mesh filename="package://dobot/urdf/meshes/1part.stl" scale="0.01 0.01 0.01"/>
       </geometry>
-      <material name="black"/>
+      <material name="white"/>
     </visual>
   </link>
 <link name="link_2">
